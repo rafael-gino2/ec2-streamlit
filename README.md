@@ -1,6 +1,6 @@
 <h1 align="center">📊 Análise Financeira — Microsoft Financial Sample</h1> <p align="center"> Uma aplicação web interativa feita com <strong>Streamlit</strong> para análise de dados financeiros da Microsoft. <br> Visualize métricas, filtre dados, e explore insights de forma rápida e dinâmica. </p>
 
-🛠️Ferramentas e Bibliotecas Utilizadas
+🛠️Ferramentas e Bibliotecas Utilizadas:
 AWS EC2
 
 Git
