@@ -10,18 +10,18 @@ Pandas
 Matplotlib
 Seaborn 
 
-🔄️Passo a passo para rodar a aplicação
+🔄️Passo a passo para rodar a aplicação:
 
 Criar a instância EC2 na AWS
 Escolha a AMI (Ubuntu, Amazon Linux, Debian, etc).
 
-Configure o grupo de segurança liberando as portas
+Configure o grupo de segurança liberando as portas:
 
 22 (SSH) para acesso remoto
 8501 para acesso ao Streamlit.
 Faça o download da chave .pem para acesso via SSH.
 
-Conectar à instância via SSH
+Conectar à instância via SSH:
 
 ssh -i "minhachave.pem" usuario@<IP-da-instância>
 Instalar Git
@@ -33,7 +33,7 @@ Clonar o repositório do projeto
 git clone https://github.com/usuario/repositorio.git
 
 
-Instalar Python e bibliotecas necessárias
+Instalar Python e bibliotecas necessárias:
 
 
 sudo apt install python3 python3-pip -y
