@@ -23,7 +23,7 @@ prova/
 🚀 Como Executar
 ⚠️ Certifique-se de que o arquivo MS_Financial Sample.csv está presente no mesmo diretório do app.py.
 
-Crie um ambiente virtual e ative-o:
+#Crie um ambiente virtual e ative-o:
 
 bash
 Copiar
