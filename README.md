@@ -1,41 +1,46 @@
 <h1 align="center">📊 Análise Financeira — Microsoft Financial Sample</h1> <p align="center"> Uma aplicação web interativa feita com <strong>Streamlit</strong> para análise de dados financeiros da Microsoft. <br> Visualize métricas, filtre dados, e explore insights de forma rápida e dinâmica. </p>
-🧰 Funcionalidades
-✅ Visualização de métricas financeiras como:
 
-Vendas
-Lucro
-Descontos
-Custo de produção
+🛠️Ferramentas e Bibliotecas Utilizadas
+AWS EC2
 
-✅ Filtros interativos por:
+Git
 
-Ano
-Segmento
-País
+Python
+Streamlit
+Pandas
+Matplotlib
+Seaborn 
 
-✅ Visualizações com:
+🔄️Passo a passo para rodar a aplicação
+Criar a instância EC2 na AWS
+Escolha a AMI (Ubuntu, Amazon Linux, Debian, etc).
 
-📈 Matplotlib
+Configure o grupo de segurança liberando as portas
 
-📊 Seaborn
+22 (SSH) para acesso remoto
+8501 para acesso ao Streamlit.
+Faça o download da chave .pem para acesso via SSH.
 
-✅ Layout moderno e responsivo via:
+Conectar à instância via SSH
 
-st.set_page_config(layout="wide")
-📁 Estrutura do Projeto
-prova/
-├── app.py              # Aplicação principal em Streamlit
-├── 1.png, 2.png        # Imagens de apoio (ex: gráficos, interface)
-├── ec2-keys.pem        # 🔒 Chave PEM (⚠️ não versionar publicamente!)
-├── README.md           # Este arquivo
-├── .git/               # Diretório Git
-🚀 Como Executar
-⚠️ Certifique-se de que o arquivo MS_Financial Sample.csv está presente no mesmo diretório do app.py.
+ssh -i "minhachave.pem" usuario@<IP-da-instância>
+Instalar Git
 
-1️⃣ Crie e ative um ambiente virtual
-python -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
-2️⃣ Instale as dependências
-pip install streamlit pandas matplotlib seaborn
-3️⃣ Execute a aplicação
-streamlit run app.py
+sudo apt update
+sudo apt install git -y
+Clonar o repositório do projeto
+
+git clone https://github.com/usuario/repositorio.git
+Instalar Python e bibliotecas necessárias
+
+sudo apt install python3 python3-pip -y
+pip3 install streamlit pandas altair
+Rodar o app Streamlit
+
+streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+Acesse a aplicação via browser:
+http://<IP-da-instância>:8501
+🗃️Arquivos principais
+app.py (o app principal que tem os dashboards)
+
+MS_Financial Sample.csv
